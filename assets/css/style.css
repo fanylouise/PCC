@@ -24,14 +24,82 @@ header{
     position: absolute;
     top: 15px;
     right: 15px;
+    margin-left: 15px;
 }
 .autor_1{
     margin-left: 30px;
     color: #1D5C63;
     font-weight: 600;
+    margin-right: 30px;
 }
 .text-right{
     position: absolute;
-    left: 15px;
-    float: right;
+    top: 15px;
+    left: 150px;
+    max-width: 300px;
+
+    
 }
+section{
+    margin-left: 60px;
+    color: #1D5C63;
+}
+a{
+    color: #1D5C63;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.img_1{
+    float: right;
+    top: 100px;
+    left: 770px;
+    position: absolute;
+}
+
+.img_2{
+    float: right;
+    top: 770px;
+    left: 400px;
+    position: absolute;
+}
+
+.botao_2{
+    position:absolute;
+    top: 530px;
+    left: 60px;
+}
+.copy_2{
+    position: absolute;
+    top: 680px;
+    left: 600px;
+}
+.copy_3{
+    position:absolute;
+    top: 1300px;
+    text-align: center;
+    left: 370px;
+}
+.causas{
+    position: absolute;
+    top: 1400px;
+    display: block;
+}
+.bird{
+    margin-right: 5px;
+
+}
+.call_action{
+    position: absolute;
+    top: 1900px;
+    text-align: center;
+    left: 555px;
+
+
+}
+.btn-outline-success{
+ float: left;
+ margin: 0 10px 30px 10px;
+}
+
