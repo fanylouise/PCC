@@ -1,28 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- tags meta requeridas-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1, shrink-to-fit=no">
 
-    <!--Estilo CSS-->
+    <!-- Bootstrap CSS --> 
+    <link rel="stylesheet" href="../PCC/assets/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="../PCC/assets/css/style_cad_ong.css">
+     <!--Estilo CSS --> 
+     <link rel="stylesheet" href="../PCC/assets/css/style_cad_volun.css">
 
-     <!-- Bootstrap CSS --> 
-
-     <link rel="stylesheet" href="../PCC/assets/css/bootstrap.min.css">
     <title> World of Hope - Cadastro</title>
-</head>
-<body>
-<div class="container">
-    <div class="form-group">
-        <form action="" method="post">
-            <legend class="display-4">Cadastro para ONGs</legend> <!--Título Principal -->
-        </form>
-    </div>
-</div>
+  </head> 
+  <body>
+      <!-- Início Container -->
+      <div class="container">
+        <div class="form-group">
+          <form action="" class="w-100" method="post">  <!--Início do Formulário-->
+          <legend class="display-4">Cadastro para ONGs</legend> <!--Título Principal -->
+     <h3>Infomações da Instituição</h3>  <!-- Título Descritivo  -->
+
+        <fieldset>
+            <label for="nome"></label>
+                Nome: 
+                <br><input type="text" placeholder="Insira o nome da Instituição" class="form-control w-100"  name="nome"><br>
+
+                <label for="email"></label>
+                E-mail:
+                <br><input type="email" id="email" placeholder="Insira o email da instituição" class="form-control"><br>
+
+                <label for="conf_email"></label>
+                Confirme o e-mail:
+                <br><input type="email" id="conf_email" placeholder="Insira o email da instituição novamente" class="form-control"><br>
+
+                <label for="razao"></label>
+                Razão Social:
+                <br><input type="text" class="form-control w-100" name="razao"><br>
+
+                <label for="cnpj"></label>                
+                CNPJ:
+                <br><input type="text" placeholder="00.000.000/0000-00" class="form-control"><br>
+
+                <label for="atuacao"></label>
+                Área de atuação: <!--Começo atuação-->
+
+            <select name="atuacao" id="atuacao" class="form-control" style="text-align: center;" >
+                
+                <option value="atuacao" placeholder="Selecione a área em que a ONG atua" id="atuacao"></option>
+                <option value="conservacao">Conservação de recursos naturais</option>
+                <option value="controle">Controle da poluição</option>
+                <option value="protecao">Proteção aos animais</option>
+                <option value="alternativas">Tecnologias alternativas</option>
+                <option value="ass_ser_soc">Assistência e serviços sociais</option>
+                <option value="ass_adu">Assistência a adultos</option>
+                <option value="ass_cri">Assistência a crianças</option>
+                <option value="ass_pcd">Assistência a PCDs</option>
+                <option value="ass_des_cat">Assistência a desastres e catástrofes</option>
+                <option value="ass_ido">Assistência a idosos</option>
+                <option value="ass_jov">Assistência jovens</option>
+                <option value="ass-fam">Assistência familiar</option>
+                <option value="ass_mat">Assistência material</option>
+                <option value="cre">Creches</option>
+                <option value="comb_vio">Combate a violência </option>
+                <option value="dir_mul">Direitos da mulher</option>
+                <option value="pre_cri">Prevenção do crime</option>
+                <option value="pro_cid">Promoção da cidadania</option>
+                <option value="pro_con">Proteção ao consumidor</option>
+                <option value="pro_dos_dir_civ">Proteção dos direitos civis</option>
+                <option value="rea_de_inf_e_cri">Reabilitação de infratores e criminosos</option>
+                <option value="ser_jur">Serviços Jurídicos</option>
+                <option value="ass_cie">Associações científicas</option>
+                <option value="cul">Cultura</option>
+                <option value="edu">Educação</option>
+                <option value="esp">Esportes</option>
+                <option value="hos">Hospital</option>
+                <option value="ser_med_de_rea">Serviços médicos de reabilitação</option>
+                <option value="tra_e_rec_de_dep_qui">Tratamento e recuperação de dependentes químicos</option>
+                <option value="out">Outros</option>
+            </select><!--Fim atuação-->
+        </fieldset> <br>
+
+        <h3>Bio</h3> <!-- Título Descritivo  -->
+
+        <fieldset> <!-- Caixa de Texto  -->
+
+          <label for="bio"></label>
+            <textarea 
+            class="form-control " name="" id="bio" cols="30" rows="5" placeholder="Conte mais sobre a ONG" autocapitalize="sentences" maxlength="300 " style="resize: none; color: gray;">
+            </textarea>
+
+        </fieldset><!-- Fim Caixa de Texto  -->
+
+        <br>
+
+
+        <h3>Infomações do responsável</h3>  <!-- Título Descritivo  -->
+
+        <fieldset> 
+          <label for="name" ></label>
+                Nome Completo: <input type="text" name="" id="name" placeholder="Insira seu nome" class="form-control"> <!--Nome-->
+                    
+      <fieldset>
+        <br>
+        <!-- Informações Pessoais -->
+        <label for="endereco">
+          Endereço:
+        </label>
+         <input type="text" class="form-control" id="endereco" placeholder="Endereço, número, complemeto."><br>
+
+        <label for="email">
+            Insira seu e-mail: 
+        </label> 
+         <input type="email" name=""  id="email" placeholder="Insira seu e-mail" class="form-control"><br>
+
+        <label for="conf_email">
+          Confirme seu e-mail:
+        </label>
+           <input type="email" name=""  id="email_conf" placeholder="Insira seu e-mail novamente" class="form-control"><br>
+
+          <label for="tel">
+             Celular:
+          </label>
+           <input type="tel" name="" id="tel" class="form-control" placeholder="&#40;xx&#41;xxxxx-xxxx"><br>
+        <label for="senha">
+           Senha:
+        </label>
+          <input type="password" name=""  id="senha" placeholder="Insira uma senha forte" class="form-control"><br>
+
+        <label for="senha_conf">
+          Confirme sua senha: 
+        </label>
+          <input type="password" name=""  id="senha_conf" placeholder="Insira novamente sua senha" class="form-control"><br>
+          
+       
+        <!-- Fim Informações Pessoais -->
+
+         
+        <br>
+
+        <div> <!-- Finalizar Cadastro  -->
+          
+           <button class="btn btn-success" style="color: aliceblue;">Cadastrar ONG
+              <a href="#" class="link-light"></a>
+           </button>
+
+        </div>
+      </div>
+
+    </form> <!--Fim do Formulário-->
+      </div> 
+      <!-- Fim Container -->
+     
+   
 
 
 
@@ -31,6 +162,26 @@
 
 
 
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+     crossorigin="anonymous">
+   </script>
+
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+     crossorigin="anonymous">
+   </script>
+   
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js">
+   </script>
+  </body>
 
 
 

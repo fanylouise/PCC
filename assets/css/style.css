@@ -1,105 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Sora:wght@100;200;300;400&display=swap'); 
 
-*{
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Sora', sans-serif;
-}
+/*Formatação do body*/
 body{
+    margin: 0;
     background-color: #EDE6DB;
 }
+/*Formatação do header*/
+.container_1{
+    height: 140px;
+    background-color: #1D5C63;
+    display: flex;
+    color: #EDE6DB;
+    text-align: center;
+}
+.frase_do_site{
 
-/*Formatando header*/
-
-header{
-    font-family: 'Sora', sans-serif;
-    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left:70px;
+    font-weight: 500;
 }
 
 .logo{
-    margin: 15px 20px 15px 15px;
+    margin: 10px;
 }
-.login{
-    float: right;
-    margin-right: 15px;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    margin-left: 15px;
-}
-.autor_1{
-    margin-left: 30px;
-    color: #1D5C63;
-    font-weight: 600;
-    margin-right: 30px;
-}
-.text-right{
-    position: absolute;
-    top: 15px;
-    left: 150px;
-    max-width: 300px;
+.btn {
+flex-wrap:wrap-reverse;
+margin-left: 10px;
 
-    
-}
-section{
-    margin-left: 60px;
-    color: #1D5C63;
-}
-a{
-    color: #1D5C63;
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: none;
-}
-.img_1{
-    float: right;
-    top: 100px;
-    left: 770px;
-    position: absolute;
 }
 
-.img_2{
-    float: right;
-    top: 770px;
-    left: 400px;
-    position: absolute;
-}
+/*Formatação do conteúdo principal*/
+/*Formatação do dos botões de direcionamento*/
 
-.botao_2{
-    position:absolute;
-    top: 530px;
-    left: 60px;
-}
-.copy_2{
-    position: absolute;
-    top: 680px;
-    left: 600px;
-}
-.copy_3{
-    position:absolute;
-    top: 1300px;
+/*Formatação do footer*/
+.footer{ 
+    height: 80px;
+    background-color: #1D5C63;
+    color: #EDE6DB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    left: 370px;
 }
-.causas{
-    position: absolute;
-    top: 1400px;
-    display: block;
-}
-.bird{
-    margin-right: 5px;
-
-}
-.call_action{
-    position: absolute;
-    top: 1900px;
-    text-align: center;
-    left: 555px;
-
-
-}
-.btn-outline-success{
- float: left;
- margin: 0 10px 30px 10px;
-}
-
