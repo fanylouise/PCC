@@ -1,47 +1,69 @@
-
-/*Formatação do body*/
-body{
+/*GERAL*/
+*{
     margin: 0;
-    background-color: #EDE6DB;
-}
-/*Formatação do header*/
-.container_1{
-    height: 140px;
-    background-color: #1D5C63;
-    display: flex;
-    color: #EDE6DB;
-    text-align: center;
-}
-.frase_do_site{
-
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-left:70px;
-    font-weight: 500;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+:root{
+    --primary-color: #1A3C40;
+    --paragraph-color: black;
+    --bg-color: #EDE6DB;
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    background-color:var(--bg-color) ;
+    text-align: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+/*CABEÇALHO*/
+header{
+    background-color: #1A3C40;
+    height: 19rem;
+}
 .logo{
-    margin: 10px;
+    margin-inline: auto;
 }
-.btn {
-flex-wrap:wrap-reverse;
-margin-left: 10px;
-
+.button button{
+    margin: auto;
+    font-size: 2rem;
+    cursor: pointer;
+}
+/*NAVEGAÇÃO*/
+nav{
+    margin: 0 auto;
+    line-height:3rem;
+}
+nav a{
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    margin: 1rem;
 }
 
-/*Formatação do conteúdo principal*/
-/*Formatação do dos botões de direcionamento*/
-
-/*Formatação do footer*/
-.footer{ 
-    height: 80px;
-    background-color: #1D5C63;
-    color: #EDE6DB;
+nav ul{
     display: flex;
-    flex-direction: column;
+    margin-block: auto;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items:center ;
+    list-style:none;
+}
+nav ul li{
+    margin: 2rem;
+}
+nav ul li a{
+    margin: 1rem auto;
+}
+nav .navegacao ul li a{
+    text-decoration: none;
+
 }
