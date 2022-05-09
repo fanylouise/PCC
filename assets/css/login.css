@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #EDE6DB;
+}
+h4{
+    color: #1D5C63;
+  border-radius: 4px;
+  text-align: center;
+  padding-bottom: 1.2rem;
+}
+.container{
+  text-align: center;
+  display:flex;
+  height:650px;
+  justify-content : center;
+  align-items:center;
+}
+.ilustracao{
+  visibility:collapse;
+}
+
+/*RESPONSIVIDADE*/
+
+@media(min-width:1024px){
+
+  body{
+    font-size:1.5rem;
+  }
+  container{
+    display: none;
+    height: initial;
+
+  }
+   h4{
+     background-color: #1D5C63;
+     color: #EDE6DB;
+   }
+   input{
+     text-align: center;
+   }
+}
+
