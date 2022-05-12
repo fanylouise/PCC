@@ -78,6 +78,9 @@ nav .navegacao ul li a{
 }
 
 /*CONTEÚDO*/
+section.boasVindas h3{
+    opacity: 0.7;
+}
 
 div.container-conteudo2{
     text-align: center;
@@ -140,6 +143,9 @@ footer{
 }
 
 /*Botão para voltar ao início*/
+#voltarParaInicio{
+    position: relative;
+}
 
 
 @media (min-width:1024px) {
