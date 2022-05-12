@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: #1A3C40;
+}
 
 :root{
     --primary-color: #1A3C40;
@@ -65,5 +69,75 @@ nav ul li a{
 }
 nav .navegacao ul li a{
     text-decoration: none;
+
+}
+
+/*BOAS VINDAS*/
+.boasVindas{
+    text-align: center;
+}
+
+/*CONTEÚDO*/
+
+div.container-conteudo2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    
+}
+div.container-conteudo2 .card{
+   border-radius: 1.5rem;
+}
+
+section .btn a{
+    text-decoration: none;
+}
+section .btn a:hover{
+    color: black;
+}
+
+svg{
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+hr{
+    margin: 2.7rem;
+}
+a::after, :hover{
+    text-decoration: none;
+}
+.mais{
+    font-size: 5rem;
+    text-decoration: none;
+}
+.cadastro{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A3C40;
+    color: #EDE6DB;
+    font-weight: 500;
+    height: 10rem;
+}
+
+/*Botão para voltar ao início*/
+
+
+@media (min-width:1024px) {
 
 }
