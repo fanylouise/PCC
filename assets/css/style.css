@@ -144,7 +144,9 @@ footer{
 
 /*Botão para voltar ao início*/
 #voltarParaInicio{
-    position: relative;
+    position: fixed;
+    bottom: 1rem;
+    right: 2.5rem;
 }
 
 
