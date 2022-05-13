@@ -1,0 +1,30 @@
+/*GERAL*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: #1A3C40;
+}
+
+:root{
+  --primary-color: #1A3C40;
+  --paragraph-color: black;
+  --bg-color: #EDE6DB;
+  font-size: 62.5%;
+}
+body{
+  font-size: 1.6rem;
+  background-color:var(--bg-color) ;
+  text-align: center;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+html,
+body{
+  width: 100%;
+}
