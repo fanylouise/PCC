@@ -28,3 +28,39 @@ html,
 body{
   width: 100%;
 }
+div.container-cabecalho{
+  background-color: #1A3C40;
+}
+
+section.iconsSuperiores{
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+}
+form.input-group{
+  width: 200px;
+  margin-left: 1rem;
+}
+form svg{
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+input::placeholder{
+  color: black;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+a #perfil:hover{
+
+}
+
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1A3C40;
+  color: #EDE6DB;
+  font-weight: 500;
+  height: 10rem;
+}
