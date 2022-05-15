@@ -4,10 +4,11 @@ ScrollReveal({
   duration: 700
 }).reveal(`
   svg, 
-  .container-cabecalho img, 
-  #home .stats, 
-  #services,
-  #services header,
+  .container-cabecalho, 
+  .guias,
+  section svg, 
+  .button,
+  .boasVindas,
   #services .card
   #about, 
   #about header, 
