@@ -37,7 +37,6 @@ h4{
 .container{
   text-align: center;
   display:flex;
-  height:650px;
   justify-content : center;
   align-items:center;
 }
