@@ -2,6 +2,7 @@ body{
   background-color: #EDE6DB;
 }
 .container{
+  width: 100%;
   display: flex;
   justify-content: center;
 }
