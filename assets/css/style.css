@@ -127,6 +127,7 @@ div.container-conteudo2{
 
 /*CARDS "SERVIÇOS"*/
 div.container-conteudo2 .card{
+    display: flex;
    border-radius: 1.5rem;
 }
 
@@ -215,7 +216,7 @@ footer{
    #voltarParaInicio{
        margin-bottom: -6rem;
    }
-   div.container-conteudo2 .card{
+   div.card{
        display: flex;
        align-items: center;
        
