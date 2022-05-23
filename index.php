@@ -185,7 +185,7 @@
             <br>
             <br>
             <button class="btn btn-success">
-              <a href="./cad_ong.html">
+              <a href="./form_cadastro_ong.php">
                 <h3> Cadastre-se ONG</h3>
                
               </a>
