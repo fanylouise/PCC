@@ -199,16 +199,34 @@ footer{
    #saibamais{
        font-size: 1rem;
    }
+   section#depoimentos{
+       justify-content: center;
+       align-items: center;
+       
+   }
+   #dep1,#dep2,#dep3{
+       padding: 1rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-bottom: 1rem;
+       border-radius: 1rem;
+       background-color: #1A3C40;
+       color: #EDE6DB;
+   }
+   .estrelas{
+       color: orange;
+   }
+
 
 @media (min-width:1024px) {
-
 
     .container-conteudo1 svg{
         max-width: 350px;
         max-height: 350px;
     }
-
    .card-body{
+       
        max-width: 400px ;
        max-height: 400px;
    }
@@ -218,13 +236,62 @@ footer{
    }
    div.card{
        display: flex;
-       align-items: center;
+       
        
    }
    div.logo{
     margin-top: 20px;
 }
 
-   
+.cont1{
+    text-align: left;
+    margin-left: 20rem;
+}
+.center{
+    text-align: center;
+}
+.cont1 svg{
+    float: left;
+}
+button#btnCadVol.btn.btn-success{
+    margin-left: 8rem; 
+}
+
+.cont2{
+    text-align: right;
+    margin-top: 20rem;
+    margin-right: 20rem;
+}
+.center{
+    text-align: justify;
+}
+button#btnCadOng.btn.btn-success{ 
+   float: left ;
+}
+
+
+div.container-conteudo2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 5rem;
+   border-radius: 1.5rem;
+}
+
+.mais2{
+    visibility: hidden;
+}
+
+section .btn a{
+    text-decoration: none;
+}
+section .btn a:hover{
+    color: black;
+}
+
+
+
+
    
 }
