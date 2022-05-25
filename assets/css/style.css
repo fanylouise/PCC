@@ -125,10 +125,14 @@ div.container-conteudo2{
     
 }
 
+div.card#dep1,#dep2,#dep3{
+   margin: 2rem;
+}
 /*CARDS "SERVIÇOS"*/
 div.container-conteudo2 .card{
     display: flex;
    border-radius: 1.5rem;
+   margin-bottom: 1rem;
 }
 
 section .btn a{
@@ -179,6 +183,7 @@ footer{
     color: #EDE6DB;
     font-weight: 500;
     height: 10rem;
+    width: 100%;
 }
 
 /*Botão para voltar ao início*/
@@ -197,19 +202,21 @@ footer{
       border-radius: 2rem 4rem;
    }
    #saibamais{
+       margin-top: 1.5rem;
        font-size: 1rem;
    }
-   section#depoimentos{
-       justify-content: center;
-       align-items: center;
+   div{
+       width: 100%;
+       margin: 0 auto;
        
    }
-   #dep1,#dep2,#dep3{
+   section div.container-conteudo3{
+       min-height: 300px;
        padding: 1rem;
        display: flex;
        justify-content: center;
        align-items: center;
-       margin-bottom: 1rem;
+       margin: 1rem;
        border-radius: 1rem;
        background-color: #1A3C40;
        color: #EDE6DB;
@@ -217,7 +224,6 @@ footer{
    .estrelas{
        color: orange;
    }
-
 
 @media (min-width:1024px) {
 
@@ -265,18 +271,19 @@ button#btnCadVol.btn.btn-success{
 .center{
     text-align: justify;
 }
-button#btnCadOng.btn.btn-success{ 
-   float: left ;
-}
+/*button#btnCadOng.btn.btn-success{ 
+}*/
 
 
 div.container-conteudo2{
+    float: left;
     text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: row;
     margin-bottom: 5rem;
    border-radius: 1.5rem;
+   width: 100%;
 }
 
 .mais2{
@@ -289,9 +296,6 @@ section .btn a{
 section .btn a:hover{
     color: black;
 }
-
-
-
 
    
 }
