@@ -1,0 +1,138 @@
+
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- tags meta requeridas-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS --> 
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+     <!--Estilo CSS --> 
+     <link rel="stylesheet" href="./world_of_hope/projetoInicial/css/cad_vaga.css">
+
+      <!--Favicon-->
+      <link rel="apple-touch-icon" sizes="180x180" href="./assets/recursos_de_design/logo/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/recursos_de_design/logo/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./assets/recursos_de_design/logo/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+ 
+
+    <title> World of Hope - Vaga</title>
+  </head> 
+  <body>
+      <!-- Início Container -->
+      <div class="container">
+        <div class="form-group">
+          <form action="" class="w-100" method="post">  <!--Início do Formulário-->
+          <legend class="display-4">Cadastro de nova vaga</legend> <!--Título Principal -->
+     <h3>Infomações da Vaga</h3>  <!-- Título Descritivo  -->
+
+        <fieldset>
+            <label for="nome"></label>
+                Nome da vaga 
+                <br><input type="text" placeholder="Insira o nome da Vaga" class="form-control w-100"  name="nome"><br>
+                <label for="endereco"></label>
+                Endereço da vaga:
+                <br><input type="address" id="endereco" placeholder="Insira o endereço da vaga" class="form-control"><br>
+
+                <label for="atuacao"></label>
+                Área de atuação: <!--Começo atuação-->
+
+            <select name="atuacao" id="atuacao" class="form-control" style="text-align: center;" >
+                
+                <option value="atuacao" placeholder="Selecione a área em que a ONG atua" id="atuacao"></option>
+                <option value="conservacao">Conservação de recursos naturais</option>
+                <option value="controle">Controle da poluição</option>
+                <option value="protecao">Proteção aos animais</option>
+                <option value="alternativas">Tecnologias alternativas</option>
+                <option value="ass_ser_soc">Assistência e serviços sociais</option>
+                <option value="ass_adu">Assistência a adultos</option>
+                <option value="ass_cri">Assistência a crianças</option>
+                <option value="ass_pcd">Assistência a PCDs</option>
+                <option value="ass_des_cat">Assistência a desastres e catástrofes</option>
+                <option value="ass_ido">Assistência a idosos</option>
+                <option value="ass_jov">Assistência jovens</option>
+                <option value="ass-fam">Assistência familiar</option>
+                <option value="ass_mat">Assistência material</option>
+                <option value="cre">Creches</option>
+                <option value="comb_vio">Combate a violência </option>
+                <option value="dir_mul">Direitos da mulher</option>
+                <option value="pre_cri">Prevenção do crime</option>
+                <option value="pro_cid">Promoção da cidadania</option>
+                <option value="pro_con">Proteção ao consumidor</option>
+                <option value="pro_dos_dir_civ">Proteção dos direitos civis</option>
+                <option value="rea_de_inf_e_cri">Reabilitação de infratores e criminosos</option>
+                <option value="ser_jur">Serviços Jurídicos</option>
+                <option value="ass_cie">Associações científicas</option>
+                <option value="cul">Cultura</option>
+                <option value="edu">Educação</option>
+                <option value="esp">Esportes</option>
+                <option value="hos">Hospital</option>
+                <option value="ser_med_de_rea">Serviços médicos de reabilitação</option>
+                <option value="tra_e_rec_de_dep_qui">Tratamento e recuperação de dependentes químicos</option>
+                <option value="out">Outros</option>
+            </select><!--Fim atuação-->
+        </fieldset> <br>
+
+        <h3>Descrição da vaga</h3> <!-- Título Descritivo  -->
+
+        <fieldset> <!-- Caixa de Texto  -->
+
+          <label for="descricao"></label>
+            <textarea 
+            class="form-control " name="" id="descricao" cols="30" rows="5" placeholder="Conte mais sobre a ONG" autocapitalize="sentences" maxlength="200" style="resize: none; color: gray;">
+            </textarea>
+
+        </fieldset><!-- Fim Caixa de Texto  -->
+
+        <br>
+        <br>
+
+        <div> <!-- Finalizar Cadastro  -->
+          
+           <button class="btn btn-success" style="color: aliceblue;">Cadastrar
+              <a href="#" class="link-light"></a>
+           </button>
+
+           
+           <button class="btn btn-danger" style="color: aliceblue;">
+            <a href="./pg_inicial_ong.html" class="link-light">Cancelar Cadastro</a>
+         </button>
+
+        </div>
+      </div>
+
+    </form> <!--Fim do Formulário-->
+      </div> 
+      <!-- Fim Container -->
+     
+   
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+     crossorigin="anonymous">
+   </script>
+
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+     crossorigin="anonymous">
+   </script>
+   
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js">
+   </script>
+  </body>
+
+
+
+
+
+

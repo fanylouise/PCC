@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(47, 161, 255);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {text-align: center;}
+div.lista {
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 10px black;
+}
+.consulta{
+    background-color: beige;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+tr:nth-child(even) {
+    background: rgb(150,200,255);
+}
+th{
+    background-color: rgb(205,205,205);
+}
+input[type=text], input[type=password] {
+    height: 30px;
+    outline: none;
+}
+th > p {
+    text-align: left;
+}
+input[type=submit] {
+    border: none;
+    background-color: rgb(35, 255, 134);
+    height: 30px;
+    width: 80px;
+    color: white;
+    cursor: pointer;
+}
+.submit{
+    padding-right: 20px;
+    text-align: right;
+}
