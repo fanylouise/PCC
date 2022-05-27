@@ -1,17 +1,47 @@
 <?php
 //UsuarioDAO.php
-require_once "Conexao.php";
+require_once "../Conexao.php";
+require_once"../DTO/Usuario.php";
 class UsuarioDAO{
     //metodo para  verificar login no banco
-    public function logar(usuario $usuario){
+    public function logar(UsuarioDTO $usuarioDTO){
         try{
             $conexao = Conexao::getInstance();    
-            $sql = "SELECT * FROM usuario where senha=? and login=? ";
+            $sql = "SELECT * FROM usuario where email=? and senha=? ";
             $stmt = $conexao->prepare($sql);//prepara sql a ser executada
-            $stmt->bindValue(1,$usuario->getSenha());//associa o valor senha a 1a interrogação
-            $stmt->bindValue(2,$usuario->getLogin());//associa o valor senha a 2a interrogação?
+            $stmt->bindValue(1, $usuarioDTO->getSenha());//associa o valor senha a 1a interrogação
+            $stmt->bindValue(2, $usuarioDTO->getEmail());//associa o valor senha a 2a interrogação?
             $stmt->execute();//executa comando sql
-            $retorno = $stmt->fetch(PDO::FETCH_ASSOC);
+            $usuarioFetch = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            if($usuarioFetch != NULL){
+                $usuario = new UsuarioDTO();
+                $usuario->setIdUsuario($usuarioFetch["idusuario"]);
+                $usuario->setNome($usuarioFetch["nome"]);
+                $usuario->setTipoUsuario($usuarioFetch["tipoUsuario"]);
+
+                return $usuario;
+            }
+            return null;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             return $retorno;
         }catch(PDOException $e){
            echo $e->getMessage();

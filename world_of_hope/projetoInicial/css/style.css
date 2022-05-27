@@ -131,6 +131,7 @@ div.card#dep1,#dep2,#dep3{
 /*CARDS "SERVIÇOS"*/
 div.container-conteudo2 .card{
     display: flex;
+    margin: 2rem;
    border-radius: 1.5rem;
    margin-bottom: 1rem;
 }

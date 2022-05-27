@@ -3,19 +3,27 @@
 require_once "../modelo/Usuario.php";
 require_once "../modelo/DAO/UsuarioDAO.php";
 
-$login = $_POST["usuario"];
+$email = $_POST["email"];
 $senha = $_POST["senha"];
 
-$usuario= new Usuario("",$login,$senha);
-$usuarioDAO = new UsuarioDAO();
-$retorno = $usuarioDAO->logar($usuario);
-if($retorno == null || empty($retorno)){
-    header("location:../visao/login.php?msg=Login/senha invalido");
-}else{
+
+$usuarioDTO = new UsuarioDTO();
+$usuarioDTO->setLoginEmail($email);
+$usuarioDTO->setSenha($senha);
+
+
+$usuarioDAO=new UsuarioDAO();
+$usuarioLogado=$usuarioDAO->logar($usuarioDTO);
+
+
+if($usuarioLogado!=null){
     session_start();
-    $_SESSION["perfil"] = $retorno["perfil"];
-    $_SESSION["login"]  = $retorno["login"];
-    $_SESSION["nome"]  = $retorno["nome"];
-    header("location:../visao/home.php");
+    $_SESSION["login"]=$usuarioLogado->getEmail();
+    $_SESSION["tipo"]=$usuarioLogado->getTipoUsuario();
+    header("location:../view/pg_inicial-ong.html");///como diferenciar os usuários para cair na sua página ex pg_inicial_ong ou pg_inicial_voluntario
+
+}else{
+    header("location:../view/entrar.html?msg='usuário e/ou senha inválidos' ");
 }
+    
 
