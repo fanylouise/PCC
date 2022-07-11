@@ -1,0 +1,122 @@
+ GERAL
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-color: #1A3C40;
+  --paragraph-color: black;
+  --bg-color: #EDE6DB;
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+  background-color:var(--bg-color) ;
+  text-align: center;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+html,
+body{
+  width: 100%;
+  height: 100%;
+}
+
+body a{
+  text-decoration: none;
+}
+
+/*CABEÇALHO*/
+header{
+  background-color: #1A3C40;
+  height: 14rem;
+}
+.logo{
+  margin-inline: auto;
+}
+h1{
+  margin: 30px;
+}
+form{
+
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: fit-content;
+  backdrop-filter: blur(16px) saturate(142%);
+    -webkit-backdrop-filter: blur(16px) saturate(142%);
+    background-color: rgba(26, 60, 64, 0.95);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+input{
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+textarea{
+  resize: none;
+}
+.avaliacao{
+  display: flex;
+  justify-content:center ;
+  align-items:center ;
+  margin: 0 auto;
+ }
+.star-icon{
+  list-style-type: none;
+  cursor: pointer;
+  color: #e2ce15;
+  font-size: 3em;/* alterar o tamanho das estrelas */
+}
+.star-icon::before{
+  content: "\2605";
+}
+.star-icon.ativo ~ .star-icon::before{
+  content: "\2606";
+}
+.avaliacao:hover .star-icon::before{
+  content: "\2605";
+}
+.star-icon:hover ~ .star-icon::before{
+  content: "\2606";
+}
+section input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input{
+  margin: auto;
+  font-size: 20px;
+}
+textarea{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+footer{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1A3C40;
+  color: #EDE6DB;
+  font-weight: 500;
+  height: 10rem;
+  width: 100%;
+}

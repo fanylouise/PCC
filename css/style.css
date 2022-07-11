@@ -1,0 +1,426 @@
+/*GERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --primary-color: #1A3C40;
+    --paragraph-color: black;
+    --bg-color: #EDE6DB;
+    font-size: 62.5%;
+    
+}
+
+body {
+    font-size: 1.3rem;
+    background-image: url("../assets/fundo/img4.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+        
+}
+.h1 , h1{
+    font-size: 2.5;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    
+}
+
+body a {
+    text-decoration: none;
+}
+
+svg {
+    height: auto;
+    max-width: 90%;
+    margin: 0 auto;
+    min-height: 200px;
+    max-height: 200px;
+}
+
+/*CABEÇALHO*/
+header {
+    background-color: #1A3C40;
+    height: 17rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div.logo {
+    margin-top: 40px;
+   
+}
+
+.button button {
+    margin: auto;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+button a h3 {
+    color: #EDE6DB;
+    
+
+}
+.cont1  {
+    text-align: left;
+    margin-left: 0.2rem;
+}
+.container-conteudo1 svg {
+    max-width: 350px;
+    max-height: 350px;
+}
+.container-conteudo1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.btn-group-lg >.btn, .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    width: 350px;
+}
+
+/*NAVEGAÇÃO*/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 3rem;
+    background-color: #1A3C40;
+
+    z-index: 1;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    margin: 1rem;
+}
+
+nav ul {
+    display: flex;
+    margin-block: auto;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    max-height: 50px;
+
+}
+
+nav ul li svg {
+    max-height: 60px;
+}
+
+nav ul li {
+    margin: 2rem;
+}
+
+nav ul li a {
+    margin: 1rem auto;
+}
+
+nav .navegacao ul li a {
+    text-decoration: none;
+
+}
+
+hr {
+    margin: 0rem;
+
+}
+
+/*BOAS VINDAS*/
+.boasVindas {
+    text-align: center;
+}
+
+/*CONTEÚDO*/
+section.boasVindas h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+section.boasVindas h2{
+    font-family: 'Times New Roman', Times, serif;
+} 
+section.boasVindas h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.container-conteudo2 {
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    flex-direction: row;
+}
+
+/*CARDS "SERVIÇOS"*/
+div.container-conteudo2 .card {
+    display: flex;
+    margin: 2rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+section .btn a {
+    text-decoration: none;
+}
+
+section .btn a:hover {
+    color: black;
+}
+
+
+
+div.card {
+    box-shadow: 1px 1px 7px;
+    width: 300px;
+    border: 2px solid #1A3C40;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+a::after,
+:hover {
+    text-decoration: none;
+}
+
+
+.mais {
+    font-size: 5rem;
+    text-decoration: none;
+}
+
+.guias {
+    border: none;
+    background-color: white;
+    color: black;
+    max-width: 300px;
+    max-height: 210px;
+    border-radius: 2rem 4rem;
+    margin: 0 auto;
+}
+
+.guias h3 a {
+    text-decoration: none;
+}
+
+.guias h3 a:visited {
+    color: rgb(0, 0, 0);
+}
+
+.guias h3 a:hover {
+    color: rgb(27, 165, 22);
+}
+h3.display-4{
+    text-align: center;
+
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A3C40;
+    color: #EDE6DB;
+    font-weight: 500;
+    height: 10rem;
+    font-size: 15px;
+  }
+  
+     
+  
+hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent,#1A3C40, transparent);  
+}
+
+/*Botão para voltar ao início*/
+#voltarParaInicio {
+    position: fixed;
+    bottom: 1rem;
+    right: 2.5rem;
+}
+
+.guias {
+
+    box-shadow: 1px 1px 4px;
+    background-color: white;
+    color: black;
+    width: 300px;
+    height: 190px;
+    border-radius: 2rem 4rem;
+}
+
+#saibamais {
+    margin-top: 10rem;
+    font-size: 1rem;
+    text-align: center;
+    border: 2px solid #1A3C40;
+    border-radius: 25px;
+
+}
+
+div {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 15px;
+
+}
+
+/* section div.container-conteudo3{
+       min-height: 300px;
+       padding: 1rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 1rem;
+       border-radius: 1rem;
+       background-color: #1A3C40;
+       color: #EDE6DB;
+   } */
+.btn-voltar{
+    position: absolute;
+    left: 10px;
+    top: 1166px;
+    z-index: 100;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.btn-voltar img, .btn-proximo img{
+    width: 40px;
+    height: 40px;
+    opacity: 50%;
+}
+.btn-proximo{
+    position: absolute;
+    right: 10px;
+    top: 1166px;
+    z-index: 100;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.container-conteudo3{
+    overflow-x:hidden;
+}
+.container-comentarios {
+    display: flex;
+    gap: 30px;
+    width: 2000px;
+    overflow-y: auto;
+    transform: translateX(0);
+    transition: all 0.5s ease;
+    padding: 10px 0;
+   
+    
+}
+
+.checked {
+    color: orange;
+}
+
+/* @media (min-width:1024px) {
+
+    .container-conteudo1 svg {
+        max-width: 350px;
+        max-height: 350px;
+    }
+
+    .card-body {
+
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    #voltarParaInicio {
+        margin-bottom: -6rem;
+    }
+
+    div.card {
+        display: flex;
+
+
+    }
+
+    div.logo {
+        margin-top: 20px;
+    }
+
+    .cont1 {
+        text-align: left;
+        margin-left: 0.2rem;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+
+    .container-conteudo1 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .center {
+        text-align: justify;
+    }
+
+    button#btnCadOng.btn.btn-success{ 
+}
+
+
+    div.container-conteudo2 {
+        float: left;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 5rem;
+        border-radius: 1.5rem;
+        width: 100%;
+    }
+
+    .mais2 {
+        visibility: hidden;
+    }
+
+    section .btn a {
+        text-decoration: none;
+    }
+
+    section .btn a:hover {
+        color: black;
+    }
+
+
+} */
